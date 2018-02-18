@@ -1,4 +1,4 @@
-/* Generated on: Sat Feb 17 2018 11:32:28 GMT+0000 (UTC) */
+/* Generated on: Sun Feb 18 2018 00:27:37 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -39,9 +39,16 @@
 .nav-link {
   padding: 30px 50px;
   border-right: 1px solid rgba(48, 40, 40, .71);
+  -webkit-transition: color 300ms cubic-bezier(.47, 0, .745, .715), background-color 400ms ease;
+  transition: color 300ms cubic-bezier(.47, 0, .745, .715), background-color 400ms ease;
   color: #fff;
   font-size: 18px;
   line-height: 1.2;
+}
+
+.nav-link:hover {
+  background-color: hsla(0, 0%, 63%, .39);
+  color: rgba(189, 255, 49, .59);
 }
 
 .nav-link.nobord {
@@ -49,8 +56,14 @@
 }
 
 .nav-link.hier {
-  background-color: rgba(61, 78, 90, .33);
-  color: #afa0a0;
+  box-shadow: 0 0 6px 0 #fff;
+  -webkit-transition: color 400ms ease-in-out, background-color 325ms cubic-bezier(.55, .085, .68, .53);
+  transition: color 400ms ease-in-out, background-color 325ms cubic-bezier(.55, .085, .68, .53);
+  color: red;
+}
+
+.nav-link.hier:hover {
+  background-color: transparent;
 }
 
 .navbar {
@@ -96,13 +109,16 @@
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 1px 1px 3px #b9b9b9;
 }
 
 .text-block-3.ab1 {
   margin-bottom: 10px;
   padding-top: 40px;
   padding-left: 30px;
+  border-right-style: none;
   text-align: left;
+  text-shadow: 1px 1px 6px #f8f8f8;
 }
 
 .text-block-4 {
@@ -229,4 +245,68 @@
 .text-block-9 {
   display: inline-block;
   color: #fff;
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    text-align: center;
+  }
+  .nav-menu {
+    margin-top: 0px;
+    background-color: #795d2f;
+  }
+  .text-block-4 {
+    width: 76%;
+  }
+  .text-block-5 {
+    padding-left: 35px;
+    letter-spacing: -0.05em;
+  }
+  .menu-button {
+    background-color: #795d2f;
+  }
+  .icon {
+    color: #fafafa;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-block-3 {
+    border-style: none;
+  }
+  .text-block-4 {
+    width: 100%;
+    text-align: center;
+  }
+  .text-block-5 {
+    padding-left: 1px;
+    background-position: 55px 50%;
+  }
+}
+
+@media (max-width: 479px) {
+  .div-block {
+    text-align: center;
+  }
+  .container {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .text-block-2 {
+    font-size: 72px;
+    letter-spacing: -1px;
+  }
+  .text-block-5 {
+    padding-left: 55px;
+    background-position: 0px 50%;
+    font-size: 28px;
+  }
+  .menu-button {
+    margin-top: 13px;
+    float: left;
+  }
+  .brand {
+    width: 80%;
+    float: right;
+  }
 }
