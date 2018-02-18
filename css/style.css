@@ -1,4 +1,4 @@
-/* Generated on: Sun Feb 18 2018 00:27:37 GMT+0000 (UTC) */
+/* Generated on: Sun Feb 18 2018 23:00:16 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -154,9 +154,10 @@
 .background-video {
   position: fixed;
   z-index: 0;
+  display: block;
   overflow: visible;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   margin-right: auto;
   margin-left: auto;
   background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .37), rgba(0, 0, 0, .37));
@@ -177,6 +178,7 @@
 
 .section-2 {
   position: relative;
+  overflow: hidden;
 }
 
 .text-block-6 {
@@ -193,6 +195,7 @@
   margin-top: 15px;
   float: right;
   font-family: Lobster, sans-serif;
+  color: #fff;
   font-size: 30px;
   line-height: 1.2em;
 }
@@ -212,8 +215,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 300px;
-  height: 225px;
+  max-width: 300px;
+  min-height: 225px;
   padding-right: 5px;
   padding-left: 5px;
   -webkit-box-pack: center;
@@ -247,7 +250,24 @@
   color: #fff;
 }
 
+.tel {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link-2 {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media (max-width: 991px) {
+  .div-block.bg2 {
+    color: #fff;
+  }
   .nav-link {
     text-align: center;
   }
@@ -262,11 +282,19 @@
     padding-left: 35px;
     letter-spacing: -0.05em;
   }
+  .div-block-2 {
+    min-height: 175px;
+  }
   .menu-button {
     background-color: #795d2f;
   }
   .icon {
     color: #fafafa;
+  }
+  .tel {
+    margin-left: 25px;
+    color: #fff;
+    text-decoration: none;
   }
 }
 
@@ -278,9 +306,24 @@
     width: 100%;
     text-align: center;
   }
+  .text-block-4.ab2 {
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: left;
+  }
   .text-block-5 {
-    padding-left: 1px;
     background-position: 55px 50%;
+  }
+  .div-block-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 225px;
+    margin: 15px auto;
+  }
+  .tel {
+    margin-left: -10px;
   }
 }
 
@@ -308,5 +351,9 @@
   .brand {
     width: 80%;
     float: right;
+  }
+  .link {
+    color: #fff;
+    text-decoration: none;
   }
 }

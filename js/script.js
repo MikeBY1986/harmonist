@@ -33,7 +33,7 @@ t.exports=function(){var t={};t.VERSION="1.6.0-Webflow";var e={},n=Array.prototy
 Webflow.require('ix').init([
   {"slug":"photo1","name":"photo1","value":{"style":{},"triggers":[{"type":"scroll","stepsA":[{"transition":"transform 500ms ease-in-out 0","x":"0px","y":"0px","z":"0px"}],"stepsB":[{"transition":"transform 200 ease 0","x":"-500px","y":"0px","z":"0px"}]}]}},
   {"slug":"photo-2","name":"photo 2","value":{"style":{},"triggers":[{"type":"scroll","stepsA":[{"transition":"transform 500ms ease-in-out 0","x":"0px","y":"0px","z":"0px"}],"stepsB":[{"transition":"transform 200 ease 0","x":"-1000px","y":"0px","z":"0px"}]}]}},
-  {"slug":"photo-3","name":"photo 3","value":{"style":{},"triggers":[{"type":"scroll","stepsA":[{"transition":"transform 500ms ease-in-out 0","x":"0px","y":"0px","z":"0px"}],"stepsB":[{"transition":"transform 200 ease 0","x":"1500px","y":"0px","z":"0px"}]}]}}
+  {"slug":"photo-3","name":"photo 3","value":{"style":{},"triggers":[{"type":"scroll","offsetBot":"0%","stepsA":[{"transition":"transform 500ms ease-in-out 0","x":"0px","y":"0px","z":"0px"}],"stepsB":[{"transition":"transform 200 ease 0","x":"1000px","y":"0px","z":"0px"}]}]}}
 ]);
 /**
  * ----------------------------------------------------------------------
