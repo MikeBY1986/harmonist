@@ -253,11 +253,7 @@
 
 .link {
   text-decoration: none;
-}
-
-.link-2 {
   color: #fff;
-  text-decoration: none;
 }
 
 @media (max-width: 991px) {
