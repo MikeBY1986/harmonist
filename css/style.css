@@ -1,4 +1,4 @@
-/* Generated on: Sun Feb 18 2018 23:00:16 GMT+0000 (UTC) */
+/* Generated on: Tue Feb 20 2018 11:11:37 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -200,11 +200,6 @@
   line-height: 1.2em;
 }
 
-.lightbox-link {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 .row-2 {
   margin-top: 80px;
   margin-bottom: 50px;
@@ -243,6 +238,7 @@
 
 .text-block-8 {
   display: inline-block;
+  color: #333;
 }
 
 .text-block-9 {
@@ -273,6 +269,7 @@
   }
   .nav-menu {
     margin-top: 0px;
+    margin-left: -10px;
     background-color: #795d2f;
   }
   .text-block-4 {
@@ -290,11 +287,15 @@
   }
   .icon {
     color: #fafafa;
+    font-size: 30px;
   }
   .tel {
     margin-left: 25px;
     color: #fff;
     text-decoration: none;
+  }
+  .link {
+    color: #fff;
   }
 }
 
@@ -328,6 +329,12 @@
 }
 
 @media (max-width: 479px) {
+  .bgheader {
+    background-image: -webkit-linear-gradient(270deg, transparent, transparent), url("../images/5a85ffea5753b900012fcfdd_bg1.jpg");
+    background-image: linear-gradient(180deg, transparent, transparent), url("../images/5a85ffea5753b900012fcfdd_bg1.jpg");
+    background-position: 0px 0px, 50% 0px;
+    background-size: auto, cover;
+  }
   .div-block {
     text-align: center;
   }
@@ -339,13 +346,22 @@
     font-size: 72px;
     letter-spacing: -1px;
   }
+  .text-block-3.ab1 {
+    padding-left: 0px;
+    text-align: center;
+  }
   .text-block-5 {
     padding-left: 55px;
     background-position: 0px 50%;
     font-size: 28px;
   }
+  .text-block-8 {
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
   .menu-button {
-    margin-top: 13px;
+    margin-top: 15px;
+    padding: 15px;
     float: left;
   }
   .brand {
@@ -353,7 +369,6 @@
     float: right;
   }
   .link {
-    color: #fff;
     text-decoration: none;
   }
 }
